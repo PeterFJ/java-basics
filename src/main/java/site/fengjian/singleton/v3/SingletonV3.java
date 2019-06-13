@@ -13,7 +13,7 @@ public class SingletonV3 {
      * 懒汉式  当用户真正需要使用时才会被初始化
      *
      */
-    private static SingletonV3 singletonV3;
+    private volatile static SingletonV3 singletonV3;
 
     private SingletonV3() {
     }
