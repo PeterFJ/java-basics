@@ -16,6 +16,10 @@ public class SingletonV3 {
     private volatile static SingletonV3 singletonV3;
 
     private SingletonV3() {
+        if (singletonV3 != null){
+            throw new RuntimeException("singletonV3已经被初始化！");
+        }
+        System.out.println("SingletonV3构造函数！");
     }
 
     /**
