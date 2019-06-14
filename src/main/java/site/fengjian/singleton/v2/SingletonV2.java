@@ -19,7 +19,7 @@ public class SingletonV2 {
     }
 
     /**
-     * 再多线程的模式下，会被初始化多次
+     * 在多线程的模式下，会被初始化多次
      * @return
      */
     public synchronized static SingletonV2 getInstance(){
