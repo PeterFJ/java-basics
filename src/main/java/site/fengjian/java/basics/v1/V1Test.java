@@ -10,7 +10,6 @@ public class V1Test {
 
         V1 v1 = new V1();
         V1 v2 = new V1();
-        //  哈哈
     }
 
 }
