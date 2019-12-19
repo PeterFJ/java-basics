@@ -51,6 +51,13 @@ public class V2 {
         System.err.println("》》》》》》》》》》》》去重：");
         System.out.println(distinctList);
 
+        // treeset去重
+        //TreeSet<Person> tree=new TreeSet<>(
+        //    Comparator.comparing(Person::getName)
+        //);
+        //tree.addAll(list);
+        //System.out.println(tree);
+
         //2.2 排序  sorted((第一个对象，第二个对象)->返回值)  （升降序看是第几个对象与第几个对象比较）
         List<Person> sortedList = list.stream().sorted((o1, o2) -> o1.getAge() - o2.getAge()).collect(Collectors.toList());
         System.err.println("》》》》》》》》》》》》排序：");
